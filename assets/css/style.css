@@ -505,7 +505,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size: 14px;
     color: #999fb3;
 }
-.main-timeline .description ul li {
+.main-timeline .description {
     font-size: 12px;
     list-style: square;
     margin-bottom: 5px;
