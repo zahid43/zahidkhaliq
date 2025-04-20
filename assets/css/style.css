@@ -507,9 +507,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .main-timeline .description {
     font-size: 12px;
-    list-style: square;
-    margin-bottom: 5px;
-    list-style-position: inside;
+    margin-bottom: 7px;
 }
 .main-timeline .timeline-content.right{
     float: right;
