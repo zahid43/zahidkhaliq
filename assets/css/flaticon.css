@@ -13,14 +13,12 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "Flaticon";
     src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
   }
 }
-
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
@@ -28,7 +26,6 @@
   font-style: normal;
   margin-left: 0px;
 }
-
 .flaticon-bitbucket-logotype-camera-lens-in-perspective:before { content: "\f100"; }
 .flaticon-squarespace-logo:before { content: "\f101"; }
 .flaticon-smug:before { content: "\f102"; }
