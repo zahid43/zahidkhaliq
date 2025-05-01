@@ -252,6 +252,8 @@ html, body {
   transition: all 0.3s ease;
 	text-transform: uppercase;
 }
+.resume-btn:focus,
+.resume-btn:active,
 .resume-btn:hover {
 	padding: 10px 25px;
 	font-size: 14px;
