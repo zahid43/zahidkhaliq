@@ -219,6 +219,7 @@ html, body {
 		padding: 20px;
 		gap: 15px;
 		z-index: 5;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
 	}
 }
 /*-------------------------------------
@@ -238,6 +239,25 @@ html, body {
 	background: rgba(31, 44, 108, .85);
 	width: 100%;
 	height: 100%;
+}
+.resume-btn {
+	display: inline-block;
+  padding: 10px 25px;
+  background-color: #d92cf9;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+	font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+	text-transform: uppercase;
+}
+.resume-btn:hover {
+	padding: 10px 25px;
+	font-size: 14px;
+	font-weight: 600;
+	opacity: .8;
+	color: #fff;
 }
 /*-------------------------------------
 	4.  About
