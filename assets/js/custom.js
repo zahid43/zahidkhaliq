@@ -124,4 +124,43 @@ $(document).ready(function(){
         });
 
 });	
-	
+
+
+// Smooth scrolling fallback for older browsers
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+	anchor.addEventListener('click', function(e) {
+			e.preventDefault();
+			const targetId = this.getAttribute('href').substring(1);
+			const targetElement = document.getElementById(targetId);
+			if (targetElement) {
+					window.scrollTo({
+							top: targetElement.offsetTop - 70, // Adjust for sticky header height
+							behavior: 'smooth'
+					});
+			}
+
+			// Close the mobile menu after clicking a link
+			document.getElementById('menu-toggle').checked = false;
+	});
+});
+
+// Add active class to the current section link
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+	let current = '';
+	sections.forEach(section => {
+			const sectionTop = section.offsetTop - 70; // Adjust for sticky header
+			if (window.scrollY >= sectionTop) {
+					current = section.getAttribute('id');
+			}
+	});
+
+	navLinks.forEach(link => {
+			link.classList.remove('active');
+			if (link.getAttribute('href').substring(1) === current) {
+					link.classList.add('active');
+			}
+	});
+});

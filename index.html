@@ -8,7 +8,7 @@
 			href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext"
 			rel="stylesheet">
 		<title>Zahid Khaliq</title>
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+		<link rel="shortcut icon" type="image/icon" href="assets/images/favicon/zahid.png" />
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/flaticon.css">
 		<link rel="stylesheet" href="assets/css/animate.css">
@@ -19,49 +19,37 @@
 	</head>
 
 	<body>
-		<!-- top-area Start -->
 		<header class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-				<nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
-
-					<div class="container">
-						<div class="flex justify-between items-center header-wrapper">
-							<!-- Start Header Navigation -->
-							<div class="navbar-header sm:w-full">
-								<button type="button" class="navbar-toggle m-0" data-toggle="collapse" data-target="#navbar-menu">
-									<i class="fa fa-bars"></i>
-								</button>
-								<a class="navbar-brand m-0" href="index.html">
-									<img src="assets/images/about/zahidkhaliq.svg" alt="Zahid Khaliq">
-								</a>
-							</div>
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-								<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-									<li class=" smooth-menu active"></li>
-									<li class="smooth-menu"><a href="#skills">skills</a></li>
-									<li class="smooth-menu"><a href="#experience">experience</a></li>
-									<li class="smooth-menu"><a href="#profiles">profile</a></li>
-									<li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-									<li class="smooth-menu"><a href="#contact">contact</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
+			<div class="header-container flex justify-between items-center">
+				<div class="logo">
+					<a class="m-0" href="index.html">
+						<img src="assets/images/about/zahidkhaliq.svg" alt="Zahid Khaliq">
+					</a>
+				</div>
+				<input type="checkbox" id="menu-toggle">
+				<label for="menu-toggle" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+				<nav class="nav-links">
+					<a href="#skills">skills</a>
+					<a href="#experience">experience</a>
+					<a href="#profiles">profile</a>
+					<a href="#portfolio">portfolio</a>
+					<a href="#contact">contact</a>
 				</nav>
 			</div>
-			<div class="clearfix"></div>
-		</header>
+	</header>
 
 		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
+		<section id="welcome-hero" class="welcome-hero flex items-center justify-center relative">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="header-text">
-							<h2>hi <span>,</span> i am <br> Zahid <br> Khaliq <span>.</span> </h2>
-							<p>UI Designer</p>
+							<h1 class="uppercase text-white leading-2">hi <span class="text-neonpurple">,</span> i am <br> Zahid <br> Khaliq <span class="text-neonpurple">.</span> </h1>
+							<p class="text-white text-large font-light uppercase mt-15 mb-7 tracking-wide">UI Designer</p>
 							<!-- <a href="assets/download/browney.txt" download>download resume</a> -->
 						</div>
 					</div>
@@ -70,27 +58,28 @@
 		</section>
 
 		<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2>about me</h2>
+		<section id="about" class="about pb-25 pt-13">
+			<div class="section-heading text-center ">
+				<h5 class="uppercase pb-13 border-b">about me</h5>
 			</div>
 			<div class="container">
-				<div class="about-content">
+				<div class="about-content pt-25">
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="single-about-txt">
-								<p>A highly skilled <strong>UI Developer</strong> with extensive experience in creating responsive, user-friendly web interfaces across various platforms. Proficient in <strong>HTML/HAML</strong>, <strong>SCSS</strong>, <strong>Tailwind CSS</strong>, and <strong>Bootstrap</strong>, with a strong focus on building reusable, scalable, and maintainable components. Experienced in collaborating with cross-functional teams to integrate front-end designs with backend technologies, ensuring seamless functionality and an enhanced user experience. Demonstrated success in optimizing performance, improving site responsiveness, and driving user engagement across mobile and desktop devices. Adept at utilizing modern UI/UX principles to deliver visually appealing and interactive web applications.</p>
+								<p class="text-grey text-base pb-9">A highly skilled <strong>UI Developer</strong> with extensive experience in creating responsive, user-friendly web interfaces across various platforms. Proficient in <strong>HTML/HAML</strong>, <strong>SCSS</strong>, <strong>Tailwind CSS</strong>, and <strong>Bootstrap</strong>, with a strong focus on building reusable, scalable, and maintainable components. Experienced in collaborating with cross-functional teams to integrate front-end designs with backend technologies, ensuring seamless functionality and an enhanced user experience. Demonstrated success in optimizing performance, improving site responsiveness, and driving user engagement across mobile and desktop devices. Adept at utilizing modern UI/UX principles to deliver visually appealing and interactive web applications.</p>
+								<div class="border-b"></div>
 								<div class="row">
 									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>phone</h3>
-											<p>+92 321 3022223</p>
+										<div class="single-about-add-info my-10">
+											<h6 class="text-darkgrey mb-1">phone</h6>
+											<p class="text-grey font-light ">+92 321 3022223</p>
 										</div>
 									</div>
 									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>email</h3>
-											<p>zaahid.khaliq@gmail.com</p>
+										<div class="single-about-add-info my-10">
+											<h6 class="text-darkgrey mb-1">email</h6>
+											<p class="text-grey font-light ">zaahid.khaliq@gmail.com</p>
 										</div>
 									</div>
 								</div>
@@ -99,8 +88,8 @@
 						<div class="col-sm-offset-1 col-sm-5">
 							<div class="single-about-img">
 								<img src="assets/images/about/profile_image.jpg" alt="profile_image">
-								<div class="about-list-icon">
-									<ul>
+								<div class="about-list-icon flex justify-center items-center">
+									<ul class="flex">
 										<li>
 											<a target="_blank" href="https://www.facebook.com/zaahidkhaliq">
 												<i class="fa fa-facebook"></i>
@@ -126,53 +115,54 @@
 		</section>
 
 		<!--skills start -->
-		<section id="skills" class="skills">
+		<div class="border-b"></div>
+		<section id="skills" class="skills pb-25 pt-13">
 			<div class="skill-content">
 				<div class="section-heading text-center">
-					<h2>skills</h2>
+					<h5 class="uppercase pb-13 border-b">skills</h5>
 				</div>
-				<div class="container">
+				<div class="container pt-25">
 					<div class="row">
 						<div class="col-md-4">
 							<div class="single-skill-content">
 								<div class="barWrapper">
-									<h2>HTML 5</h2>
-									<div class="single-progress-txt">
+									<h6>HTML 5</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>90%</h3>
+										<h6 class="text-darkpurple font-semibold">90%</h6>
 									</div>
 								</div>
 								<div class="barWrapper">
-									<h2>HAML</h2>
-									<div class="single-progress-txt">
+									<h6>HAML</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>85%</h3>
+										<h6 class="text-darkpurple font-semibold">85%</h6>
 									</div>
 								</div>
 								<div class="barWrapper">
-									<h2>CSS</h2>
-									<div class="single-progress-txt">
+									<h6>CSS</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>90%</h3>
+										<h6 class="text-darkpurple font-semibold">90%</h6>
 									</div>
 								</div>
 								<div class="barWrapper">
-									<h2>SCSS</h2>
-									<div class="single-progress-txt">
+									<h6>SCSS</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>90%</h3>
+										<h6 class="text-darkpurple font-semibold">90%</h6>
 									</div>
 								</div>
 							</div>
@@ -181,43 +171,43 @@
 						<div class="col-md-4">
 							<div class="single-skill-content">
 								<div class="barWrapper">
-									<h2>Bootstrap</h2>
-									<div class="single-progress-txt">
+									<h6>Bootstrap</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>85%</h3>
+										<h6 class="text-darkpurple font-semibold">85%</h6>
 									</div>
 								</div>
 								<div class="barWrapper">
-									<h2>Tailwind CSS</h2>
-									<div class="single-progress-txt">
+									<h6>Tailwind CSS</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>80%</h3>
+										<h6 class="text-darkpurple font-semibold">80%</h6>
 									</div>
 								</div>
 								<div class="barWrapper">
-									<h2>React JS</h2>
-									<div class="single-progress-txt">
+									<h6>React JS</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>75%</h3>
+										<h6 class="text-darkpurple font-semibold">75%</h6>
 									</div>
 								</div>
 								<div class="barWrapper">
-									<h2>Webflow</h2>
-									<div class="single-progress-txt">
+									<h6>Webflow</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>60%</h3>
+										<h6 class="text-darkpurple font-semibold">60%</h6>
 									</div>
 								</div>
 							</div>
@@ -227,43 +217,43 @@
 						<div class="col-md-4">
 							<div class="single-skill-content">
 								<div class="barWrapper">
-									<h2>Material UI</h2>
-									<div class="single-progress-txt">
+									<h6>Material UI</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>60%</h3>
+										<h6 class="text-darkpurple font-semibold">60%</h6>
 									</div>
 								</div>
 								<div class="barWrapper">
-									<h2>Sketch</h2>
-									<div class="single-progress-txt">
+									<h6>Sketch</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>80%</h3>
+										<h6 class="text-darkpurple font-semibold">80%</h6>
 									</div>
 								</div>
 								<div class="barWrapper">
-									<h2>Figma</h2>
-									<div class="single-progress-txt">
+									<h6>Figma</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>75%</h3>
+										<h6 class="text-darkpurple font-semibold">75%</h6>
 									</div>
 								</div>
 								<div class="barWrapper">
-									<h2>git</h2>
-									<div class="single-progress-txt">
+									<h6>git</h6>
+									<div class="single-progress-txt flex">
 										<div class="progress ">
 											<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="10"
 												aria-valuemax="100" style=""></div>
 										</div>
-										<h3>60%</h3>
+										<h6 class="text-darkpurple font-semibold">60%</h6>
 									</div>
 								</div>
 							</div>
@@ -274,39 +264,38 @@
 		</section>
 
 		<!--experience start -->
-		<section id="experience" class="experience">
+		<div class="border-b"></div>
+		<section id="experience" class="experience pb-25 pt-13">
 			<div class="section-heading text-center">
-				<h2>experience</h2>
+				<h5 class="uppercase pb-13 border-b">experience</h5>
 			</div>
-			<div class="container">
+			<div class="container pt-25">
 				<div class="experience-content">
 					<div class="main-timeline">
 						<ul>
 							<li>
-								<div class="single-timeline-box fix">
+								<div class="single-timeline-box mb-14 fix">
 									<div class="row">
 										<div class="col-md-5">
 											<div class="experience-time text-right">
-												<h2>2021 - Present</h2>
-												<h3>Software Engineer (Design)</h3>
+												<h6>2021 - Present</h6>
+												<h6 class="text-sm my-5">Software Engineer (Design)</h6>
 											</div>
 										</div>
 										<div class="col-md-offset-1 col-md-5">
 											<div class="timeline">
 												<div class="timeline-content">
-													<h3 class="title">
+													<h6 class="title">
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
 														Square 63
-													</h3>
-													<h5>Lahore, Pakistan</h5>
-													<p class="description">
-														<ul class="description">
-															<li>Over 3 years of experience delivering high-quality projects, consistently meeting deadlines and exceeding client expectations.</li>
-															<li>Collaborate effectively with PHP, React, and Ruby on Rails (ROR) teams to ensure seamless integration of design and functionality.</li>
-															<li>Specialized in crafting responsive and adaptive designs, ensuring optimal user experience across a wide range of devices and screen sizes.</li>
-															<li>Committed to developing scalable and reusable code, driving long-term efficiency and maintainability in all design and development efforts.</li>
-														</ul>
-													</p>
+													</h6>
+													<h6 class="text-sm my-5">Lahore, Pakistan</h6>
+													<ul class="text-xs text-grey">
+														<li class="mb-2">Over 3 years of experience delivering high-quality projects, consistently meeting deadlines and exceeding client expectations.</li>
+														<li class="mb-2">Collaborate effectively with PHP, React, and Ruby on Rails (ROR) teams to ensure seamless integration of design and functionality.</li>
+														<li class="mb-2">Specialized in crafting responsive and adaptive designs, ensuring optimal user experience across a wide range of devices and screen sizes.</li>
+														<li class="mb-2">Committed to developing scalable and reusable code, driving long-term efficiency and maintainability in all design and development efforts.</li>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -315,15 +304,15 @@
 							</li>
 
 							<li>
-								<div class="single-timeline-box fix">
+								<div class="single-timeline-box mb-14 fix">
 									<div class="row">
 										<div class="col-md-offset-1 col-md-5 experience-time-responsive">
 											<div class="experience-time">
-												<h2>
+												<h6>
 													<span><i class="fa fa-circle" aria-hidden="true"></i></span>
 													2020 - 2021
-												</h2>
-												<h3>UI Developer</h3>
+												</h6>
+												<h6 class="text-sm my-5">UI Developer</h6>
 											</div>
 										</div>
 										<div class="col-md-5">
@@ -332,23 +321,21 @@
 													<h4 class="title">
 														Freelancer
 													</h4>
-													<h5>Lahore, Pakistan</h5>
-													<p class="description">
-														<ul class="description">
-															<li>Delivered custom web designs with a focus on scalability and reusability, utilizing Bootstrap, CSS, and SCSS for responsive layouts.</li>
-															<li>Developed clean, maintainable code to ensure seamless functionality across different platforms and devices.</li>
-														</ul>
-													</p>
+													<h6 class="text-sm my-5">Lahore, Pakistan</h6>
+													<ul class="text-xs text-grey">
+														<li class="mb-2">Delivered custom web designs with a focus on scalability and reusability, utilizing Bootstrap, CSS, and SCSS for responsive layouts.</li>
+														<li class="mb-2">Developed clean, maintainable code to ensure seamless functionality across different platforms and devices.</li>
+													</ul>
 												</div>
 											</div>
 										</div>
 										<div class="col-md-offset-1 col-md-5 experience-time-main">
 											<div class="experience-time">
-												<h2>
+												<h6>
 													<span><i class="fa fa-circle" aria-hidden="true"></i></span>
 													2020 - 2021
-												</h2>
-												<h3>UI Developer</h3>
+												</h6>
+												<h6 class="text-sm my-5">UI Developer</h3>
 											</div>
 										</div>
 									</div>
@@ -361,16 +348,17 @@
 		</section>
 
 		<!--profiles start -->
-		<section id="profiles" class="profiles">
+		<div class="border-b"></div>
+		<section id="profiles" class="profiles pb-25 pt-13">
 			<div class="profiles-details">
 				<div class="section-heading text-center">
-					<h2>profiles</h2>
+					<h5 class="uppercase pb-13 border-b">profiles</h5>
 				</div>
-				<div class="container">
+				<div class="container pt-25">
 					<div class="profiles-content">
 						<div class="profile-border"></div>
 						<div class="row">
-							<div class="col-sm-3">
+							<div class="col-sm-3 p-0">
 								<div class="single-profile">
 									<div class="profile-txt">
 										<a target="_blank" href="https://www.facebook.com/zaahidkhaliq"><i class="fa fa-facebook"></i></a>
@@ -384,7 +372,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-3">
+							<div class="col-sm-3 p-0">
 								<div class="single-profile">
 									<div class="profile-txt">
 										<a target="_blank" href="https://www.linkedin.com/in/zaahidkhaliq/"><i class="fa fa-linkedin"></i></a>
@@ -398,7 +386,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-3">
+							<div class="col-sm-3 p-0">
 								<div class="single-profile">
 									<div class="profile-txt">
 										<a target="_blank" href="https://wa.me/+923213022223"><i class="fa fa-whatsapp"></i></a>
@@ -412,7 +400,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-3">
+							<div class="col-sm-3 p-0">
 								<div class="single-profile profile-no-border">
 									<div class="profile-txt">
 										<a target="_blank" href="https://github.com/zahid43"><i class="flaticon-github-logo"></i></a>
@@ -434,12 +422,13 @@
 		</section>
 
 		<!--portfolio start -->
-		<section id="portfolio" class="portfolio">
+		<div class="border-b"></div>
+		<section id="portfolio" class="portfolio pb-25 pt-13">
 			<div class="portfolio-details">
 				<div class="section-heading text-center">
-					<h2>portfolio</h2>
+					<h5 class="uppercase pb-13 border-b">portfolio</h5>
 				</div>
-				<div class="container">
+				<div class="container pt-25">
 					<div class="portfolio-content">
 						<div class="isotope">
 							<div class="row">
@@ -521,11 +510,12 @@
 		</section>
 
 		<!--contact start -->
-		<section id="contact" class="contact">
+		<div class="border-b"></div>
+		<section id="contact" class="contact pb-25 pt-13">
 			<div class="section-heading text-center">
-				<h2>contact me</h2>
+				<h5 class="uppercase pb-13 border-b">contact me</h5>
 			</div>
-			<div class="container">
+			<div class="container pt-25">
 				<div class="contact-content">
 					<div class="row">
 						<div class="col-md-offset-1 col-md-10 col-sm-10">
@@ -537,11 +527,11 @@
 									</div>
 									<div class="contact-add-info">
 										<div class="single-contact-add-info">
-											<h3>phone</h3>
+											<h6>phone</h6>
 											<p>+92 321 3022223</p>
 										</div>
 										<div class="single-contact-add-info">
-											<h3>email</h3>
+											<h6>email</h6>
 											<p>zaahid.khaliq@gmail.com</p>
 										</div>
 									</div>
@@ -561,6 +551,7 @@
 		</section>
 
 		<!--footer-copyright start-->
+		<div class="border-b"></div>
 		<footer id="footer-copyright" class="footer-copyright">
 			<div class="container">
 				<div class="hm-footer-copyright text-center">
