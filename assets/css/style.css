@@ -1,6 +1,10 @@
 /*==================================
-font-family: 'Poppins', sans-serif;
+	Google Fonts
 ==================================== */
+/*  Tuffy  */
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*  Roboto  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*=========== TABLE OF CONTENTS ===========
 1.  General css (Reset code)
@@ -27,10 +31,13 @@ font-family: 'Poppins', sans-serif;
 	--blue-trans-500:          #1f2c6c4d;
 	--blue-trans-600:          #0e19504d;
 	--slate-50:                #b2c1ce;
+	--slate-60:                #888ea5;
+	--slate-100:               #999fb3;
 	--slate-300:               #636a82;
 	--slate-400:               #6a708e;
 	--slate-500:               #676a81;
 	--slate-600:               #43485c;
+	--slate-700:               #3c4258;
 }
 * {
 	padding: 0;
@@ -44,7 +51,7 @@ font-family: 'Poppins', sans-serif;
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	color: var(--slate-500);
 	background: var(--white);
@@ -62,7 +69,7 @@ a, a:hover, a:active, a:focus {
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	color: var(--slate-600);
-	font-family: 'Poppins', sans-serif;
+	font-family: "Tuffy", sans-serif;
 	text-transform: capitalize;
 }
 h1 {
@@ -86,7 +93,7 @@ p {
 	line-height: 1.8;
 	color: var(--slate-600);
 	font-size: 16px;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 img {
 	border: none;
@@ -138,28 +145,23 @@ html, body {
 	z-index: 999;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
 }
-
 .header-container {
 	width: 1170px;
 	margin: 0 auto;
 }
-
 .logo img {
 	height: 40px;
 	opacity: 0;
 	animation: fadeIn 1s ease-in forwards;
 }
-
 @keyframes fadeIn {
 	0% { opacity: 0; transform: scale(0.8); }
 	100% { opacity: 1; transform: scale(1); }
 }
-
 .nav-links {
 	display: flex;
 	gap: 20px;
 }
-
 .nav-links a {
 	color: var(--slate-300);
 	text-decoration: none;
@@ -170,18 +172,15 @@ html, body {
 	animation: slideIn 0.5s ease-out forwards;
 	animation-delay: calc(0.2s * var(--i));
 }
-
 @keyframes slideIn {
 	0% { opacity: 0; transform: translateX(-20px); }
 	100% { opacity: 1; transform: translateX(0); }
 }
-
 .nav-links a.active,
 .nav-links a:hover {
 	color: var(--primary-400);
 	transition: color 0.3s ease;
 }
-
 .hamburger {
 	display: none;
 	flex-direction: column;
@@ -189,54 +188,23 @@ html, body {
 	gap: 5px;
 	z-index: 10;
 }
-
 .hamburger span {
 	width: 25px;
 	height: 3px;
 	background-color: var(--primary-400);
 	transition: all 0.3s ease;
 }
-
-#menu-toggle {
-	display: none;
-}
-
 #menu-toggle:checked ~ .nav-links {
 	display: flex;
 }
-
 #menu-toggle:checked ~ .hamburger span:nth-child(1) {
 	transform: rotate(45deg) translate(5px, 5px);
 }
-
 #menu-toggle:checked ~ .hamburger span:nth-child(2) {
 	opacity: 0;
 }
-
 #menu-toggle:checked ~ .hamburger span:nth-child(3) {
 	transform: rotate(-45deg) translate(5px, -5px);
-}
-
-@media (max-width: 768px) {
-	.header-container {
-		width: auto;
-	}
-	.hamburger {
-		display: flex;
-	}
-	.nav-links {
-		display: none;
-		position: absolute;
-		top: 70px;
-		left: 0;
-		width: 100%;
-		background-color: var(--white);
-		flex-direction: column;
-		padding: 20px;
-		gap: 15px;
-		z-index: 5;
-		box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
-	}
 }
 /*-------------------------------------
 	3.  Welcome-hero
@@ -255,27 +223,6 @@ html, body {
 	background: var(--blue-trans);
 	width: 100%;
 	height: 100%;
-}
-.resume-btn {
-	display: inline-block;
-  padding: 10px 25px;
-  background-color: var(--primary-400);
-  color: var(--white);
-  text-decoration: none;
-  font-size: 14px;
-	font-weight: 600;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-	text-transform: uppercase;
-}
-.resume-btn:focus,
-.resume-btn:active,
-.resume-btn:hover {
-	padding: 10px 25px;
-	font-size: 14px;
-	font-weight: 600;
-	opacity: .8;
-	color: var(--white);
 }
 /*-------------------------------------
 	4.  About
@@ -602,7 +549,7 @@ html, body {
 /* contact-adress */
 .contact-add-head h3 {
 	font-size: 24px;
-	color: #3c4258;
+	color: var(--slate-700);
 }
 .contact-add-head p {
 	font-size: 16px;
@@ -620,7 +567,7 @@ html, body {
 	font-weight: 500;
 }
 .single-contact-add-info p {
-	color: #999fb3;
+	color: var(--slate-100);
 	font-size: 16px;
 	margin-top: 18px;
 }
@@ -640,15 +587,15 @@ html, body {
 	transition: .3s;
 }
 .hm-foot-icon ul li>a:hover {
-	color: #b636ff;
+	color: var(--primary-500);
 }
 .hm-footer-copyright p {
-	color: #888ea5;
+	color: var(--slate-60);
 	text-transform: capitalize;
 	padding: 38px 0;
 }
 .hm-footer-copyright p a {
-	color: #888ea5;
+	color: var(--slate-60);
 }
 /*===============================
     Scroll Top
@@ -665,8 +612,8 @@ html, body {
 	font-size: 20px;
 	cursor: pointer;
 	color: var(--white);
-	background: #b636ff;
-	border: 1px solid #b636ff;
+	background: var(--primary-500);
+	border: 1px solid var(--primary-500);
 	border-radius: 50%;
 	-webkit-transition: .5s;
 	-moz-transition: .5s;
@@ -677,8 +624,8 @@ html, body {
 }
 #scroll-Top .return-to-top:hover {
 	background: var(--white);
-	color: #b636ff;
-	border: 1px solid #b636ff;
+	color: var(--primary-500);
+	border: 1px solid var(--primary-500);
 }
 #scroll-Top .return-to-top i {
 	position: relative;
@@ -686,13 +633,13 @@ html, body {
 }
 #scroll-Top .return-to-top i {
 	position: relative;
-	animation-name: example;
+	animation-name: top;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 	animation-duration: 1s;
 }
 
-@keyframes example {
+@keyframes top {
 	0% {
 		bottom: 0px;
 	}
@@ -749,6 +696,9 @@ html, body {
 .pb-25 {
 	padding-bottom: 100px;
 }
+.hidden {
+	display: none;
+}
 
 /* flex */
 .flex {
@@ -774,7 +724,7 @@ html, body {
 	color: var(--white);
 }
 .text-grey {
-	color: #999fb3;
+	color: var(--slate-100);
 }
 .text-darkgrey {
 	color: var(--slate-300);
@@ -799,6 +749,9 @@ html, body {
 .uppercase {
 	text-transform: uppercase;
 }
+.text-justify {
+	text-align: justify;
+}
 /* text spacing */
 .tracking-wide {
 	letter-spacing: 3px;
@@ -812,10 +765,55 @@ html, body {
 }
 /* borders */
 .border-b {	
-	border-bottom: 1px solid #e5ebf2;
+	border-bottom: 1px solid var(--white-200);
+}
+/* buttons */
+.btn {
+	display: inline-block;
+	padding: 10px 25px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	text-transform: uppercase;
+	border: 0;
+}
+.btn-primary {
+	background-color: var(--primary-400);
+	color: var(--white);
+}
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:hover {
+	background-color: var(--primary-600);
+	padding: 10px 25px;
+	font-size: 14px;
+	font-weight: 600;
+	opacity: .8;
+	color: var(--white);
 }
 /* mobile classes */
 @media (max-width: 767px) {
+	.header-container {
+		width: auto;
+	}
+	.hamburger {
+		display: flex;
+	}
+	.nav-links {
+		display: none;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		background-color: var(--white);
+		flex-direction: column;
+		padding: 20px;
+		gap: 15px;
+		z-index: 5;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 15px;
+	}
 	/* custom style */
 	.single-profile {
 		height: 70px;
@@ -824,4 +822,5 @@ html, body {
 	.sm\:w-full {
 		width: 100%;
 	}
+	
 }
