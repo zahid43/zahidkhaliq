@@ -26,6 +26,4 @@ Credits:
 - Pexels https://www.pexels.com/
 - Unsplash https://unsplash.com/
 
-License:
------------------------
-This template is under Free License - https://www.themesine.com/license/
+URL: https://zahid43.github.io/zahidkhaliq/
